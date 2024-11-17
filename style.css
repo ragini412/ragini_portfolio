@@ -7,15 +7,19 @@
     padding: 0;
 }
 :root{
-  /* --primary-color: #edf2fc;
-  --secondary-color: #212121; */
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+.dark-theme{
   --primary-color: #000106;
   --secondary-color: #fff;
+  transition: all 500ms ease-in-out;
 }
 
 body{
     font-family:  "Poppins", sans-serif;;
     background-color: var(--primary-color);
+    transition: all 500ms ease-in-out;
 }
 
 html{
@@ -40,7 +44,8 @@ nav, .nav-links{
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    /* height: 17vh; */
+    margin: 433540px 0 10px 0;
 }
 
 .nav-links{
@@ -102,7 +107,7 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #ffffff7a;
+    /* background-color: #ffffff7a; */
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -174,6 +179,9 @@ a:hover{
     height: 80vh;
   }
 
+#profile-pic{
+  border-radius: 50%;
+}
   .section__pic-container{
     display: flex;
     height: 400px;
@@ -220,6 +228,11 @@ a:hover{
   .icon{
     cursor: pointer;
     height: 2rem;
+    color: var(--secondary-color);
+  }
+
+  .sites{
+    margin-top: 2rem;
   }
 
   /* Buttons */
@@ -249,7 +262,7 @@ a:hover{
 
   .btn-color-1, .btn-color-2:hover{
     background: rgb(53, 53, 53);
-    color: var(--primary-color);
+    color: var(--primary-color) ;
   }
 
   .btn-color-1:hover{
@@ -262,6 +275,7 @@ a:hover{
 
   .btn-color-2:hover{
     border: var(--primary-color) 0.1rem solid;
+    background: var(--secondary-color);
   }
 
   .btn-container{

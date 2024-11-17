@@ -7,6 +7,7 @@
     <title>ragini_portfolio</title>
     <link rel="stylesheet" href="/ragini_portfolio/style.css">
     <link rel="stylesheet" href="/ragini_portfolio/mediaquaries.css">
+    <script src="https://kit.fontawesome.com/b44d864851.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,12 +23,17 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div>
-            <img src="./images/moon.png" class="icon" alt="">
-        </div>
+        <span>
+            <img src="./images/moon.png" class="icon" id="desc-icon" alt="">
+            <!-- <i class="fa-solid fa-moon fa-2xl icon" id="desc-icon"></i> -->
+        </span>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Ragini Gandharv</div>
+        <span>
+            <img src="./images/moon.png" class="icon" id="ham-icon" alt="">
+            <!-- <i class="fa-solid fa-moon fa-2xl icon" id="ham-icon"></i> -->
+        </span>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -44,7 +50,8 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./images/profile-pic.png" alt="Profile Picture">
+            <!-- <img src="./images/profile-pic.png" alt="Profile Picture"> -->
+            <img src="./images/20240713_220343.png" id="profile-pic" alt="Profile Picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">
@@ -61,10 +68,14 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./images/linkedin.png" alt="LinkedIn_Profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/ragini-gandharv-64974b1ba/'">
-                <img src="./images/github.png" alt="GitHub_Profile" class="icon"
-                    onclick="location.href='https://github.com/ragini412'">
+                <!-- <img src="./images/linkedin.png" alt="LinkedIn_Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/ragini-gandharv-64974b1ba/'"> -->
+                <i class="fa-brands fa-linkedin fa-2xl icon sites"
+                    onclick="location.href='https://www.linkedin.com/in/ragini-gandharv-64974b1ba/'"></i>
+                <!-- <img src="./images/github.png" alt="GitHub_Profile" class="icon"
+                    onclick="location.href='https://github.com/ragini412'"> -->
+                <i class="fa-brands fa-github fa-2xl icon sites"
+                    onclick="location.href='https://github.com/ragini412'"></i>
             </div>
         </div>
     </section>
@@ -76,28 +87,33 @@
             About Me
         </h1>
         <div class="section-container">
-            <div class="section__pic-container">
+            <!-- <div class="section__pic-container">
                 <img src="./images/about-pic.png" alt="Profile_Picture" class="about-pic">
-            </div>
+            </div> -->
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./images/experience.png" alt="experience icon" class="icon">
+                        <!-- <img src="./images/experience.png" alt="experience icon" class="icon"> -->
+                        <!-- <i class="fa-solid fa-award fa-beat icon"></i> -->
+                        <i class="fa-solid fa-award fa-beat fa-xl icon"></i>
                         <h3>Experience</h3>
                         <p>6 Months <br> Frontend Development Intern</p>
                     </div>
                     <div class="details-container">
-                        <img src="./images/education.png" alt="Education icon" class="icon">
+                        <!-- <img src="./images/education.png" alt="Education icon" class="icon"> -->
+                        <!-- <i class="fa-solid fa-building-columns fa-beat icon"></i> -->
+                        <i class="fa-solid fa-building-columns fa-beat fa-lg icon"></i>
                         <h3>Education</h3>
                         <p>Post Graduate Diploma In Full Stack Software Development </p>
                     </div>
                 </div>
                 <div class="text-container">
                     <p>Recent graduate with a Diploma in Full Stack Software Development, eager to kick start a career
-                        as a Front-End Developer. Seeking an entry-level position to leverage strong foundational skills in
+                        as a Front-End Developer. Seeking an entry-level position to leverage strong foundational skills
+                        in
                         HTML, CSS, and JavaScript. Eager to contribute to dynamic projects, learn new technologies, and
                         grow within a collaborative team environment.
-                      </p>
+                    </p>
                 </div>
             </div>
         </div>
@@ -182,93 +198,67 @@
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./images/project-1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./images/project-1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./images/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./images/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./images/project-2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./images/project-3.png"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
         <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-    </section>  
+    </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <!-- <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon"> -->
+                <i class="fa-solid fa-envelope fa-2xl icon contact-icon sites email-icon" 
+                onclick="location.href='mailto:raginigandharv4@gmail.com'"></i>
                 <p><a href="mailto:raginigandharv4@gmail.com">raginigandharv4@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <!-- <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"> -->
+                <i class="fa-brands fa-linkedin fa-2xl icon sites contact-icon"
+                    onclick="location.href='https://www.linkedin.com/in/ragini-gandharv-64974b1ba/'"></i>
                 <p><a href="https://www.linkedin.com/in/ragini-gandharv-64974b1ba/">LinkedIn</a></p>
             </div>
         </div>
