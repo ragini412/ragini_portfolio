@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* background-color: aqua; */
 }
 :root{
   --primary-color: #edf2fc;
@@ -44,8 +45,8 @@ nav, .nav-links{
 nav{
     justify-content: space-around;
     align-items: center;
-    /* height: 17vh; */
-    margin: 433540px 0 10px 0;
+    height: 17vh;
+    /* margin: 433540px 0 10px 0; */
 }
 
 .nav-links{
